@@ -1,0 +1,4 @@
+/design
+venv/
+settings.json
+*.pyc
