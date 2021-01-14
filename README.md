@@ -48,3 +48,5 @@ MIT
 - https://training.talkpython.fm/courses/details/getting-started-with-fastapi
 - https://www.banjocode.com/scrape-authenticated/
 - https://testdriven.io/blog/fastapi-jwt-auth/
+- App structure / separation of concerns
+    - https://camillovisini.com/article/abstracting-fastapi-services/
