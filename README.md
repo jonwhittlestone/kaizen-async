@@ -10,17 +10,19 @@ This project supersedes the Django implementation.
 
 ```
     [x] Asynchronous SJD scraper with secret mgmt
-    [ ] Serve SJD metric
-    [ ] Set up Pytest for mocked SJD metric
+    [x] Serve existing Kaizen metrics
+    [ ] Set up Pytest and write tests with mocks
+    [ ] Refactor - models dir
+    [ ] Deploy to linode with nginx
     [ ] Dockerize
     [ ] Authentication
     [ ] Deploy w/Github Actions
-    [ ] Simple client
+    [ ] Simple React client on homepage using Jinja template
     [ ] Gmail Inbox count/scraper
     [ ] Test for Async Gmail Inbox counter
-    [ ] Serve GmailInbox count
+    [ ] serve American Express statement from inbox metric
     [ ] Simple Caching
-    [ ] Add precommit
+    [x] Add precommit
 ```
 
 ## Routes
@@ -28,7 +30,15 @@ This project supersedes the Django implementation.
 ## Live Docs
 
 ## Quick start
-Instructions to create secrets file and run locally.
+0. Create `settings.json` file from `settings_template.json` and populate with credentials.
+
+1. Run the server
+
+        (venv) $ python main.py
+
+2. Hit the Kaizen endpoint
+
+        curl http://127.0.0.1:8000/api/kaizen
 
 ## License
 MIT
@@ -38,4 +48,3 @@ MIT
 - https://training.talkpython.fm/courses/details/getting-started-with-fastapi
 - https://www.banjocode.com/scrape-authenticated/
 - https://testdriven.io/blog/fastapi-jwt-auth/
-

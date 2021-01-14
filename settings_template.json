@@ -1,4 +1,14 @@
 {
     "sjd_username": "CHANGE_ME",
-    "sjd_password": "CHANGE_ME"
+    "sjd_password": "CHANGE_ME",
+
+    "email_username": "CHANGE_ME",
+    "email_password": "CHANGE_ME",
+
+    "goodreads_key": "CHANGE_ME",
+    "goodreads_secret": "CHANGE_ME",
+
+    "pocket_consumer": "CHANGE_ME",
+    "pocket_access": "CHANGE_ME"
+
 }
