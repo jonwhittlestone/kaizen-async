@@ -66,3 +66,6 @@ MIT
 
 - FastAPI Dev/Test from testdrivenio article repo
   - https://github.com/testdrivenio/fastapi-crud-async
+
+- App structure / separation of concerns
+    - https://camillovisini.com/article/abstracting-fastapi-services/
