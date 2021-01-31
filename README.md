@@ -11,17 +11,21 @@ This project supersedes the Django implementation.
 ```
     [x] Asynchronous SJD scraper with secret mgmt
     [x] Serve existing Kaizen metrics
-    [ ] Set up Pytest and write tests with mocks
-    [ ] Refactor - models dir
-    [ ] Deploy to linode with nginx
+    [x] Set up Pytest and write simple test
+    [ ] Moar tests with mocks
+    [ ] Data layer - models dir/persist to DB
     [ ] Dockerize
+    [ ] Deploy to linode with nginx
     [ ] Authentication
     [ ] Deploy w/Github Actions
     [ ] Simple React client on homepage using Jinja template
-    [ ] Gmail Inbox count/scraper
-    [ ] Test for Async Gmail Inbox counter
-    [ ] serve American Express statement from inbox metric
+    [ ] write + serve American Express statement from inbox metric
+    [ ] write + serve savings metric
     [ ] Simple Caching
+    [ ] Stash results to NoSQL
+    [ ] Hourly cron invocation
+    [ ] Analytics w/Streamlit
+    [ ] Investigate serverless invocation
     [x] Add precommit
 ```
 
@@ -32,13 +36,19 @@ This project supersedes the Django implementation.
 ## Quick start
 0. Create `settings.json` file from `settings_template.json` and populate with credentials.
 
-1. Run the server
+1. In the project root directory, Run the server
 
-        (venv) $ python main.py
+        (venv) $ uvicorn app.main:api --reload
 
 2. Hit the Kaizen endpoint
 
         curl http://127.0.0.1:8000/api/kaizen
+
+# Run tests
+
+```
+        pytest tests
+```
 
 ## License
 MIT
@@ -46,5 +56,13 @@ MIT
 ### Resources
 
 - https://training.talkpython.fm/courses/details/getting-started-with-fastapi
+
 - https://www.banjocode.com/scrape-authenticated/
+
 - https://testdriven.io/blog/fastapi-jwt-auth/
+
+- Python Testing with pytest
+  - https://learning.oreilly.com/library/view/python-testing-with/9781680502848/
+
+- FastAPI Dev/Test from testdrivenio article repo
+  - https://github.com/testdrivenio/fastapi-crud-async

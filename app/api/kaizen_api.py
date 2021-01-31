@@ -1,7 +1,7 @@
 import fastapi
 
 router = fastapi.APIRouter()
-from services import sjd_service, email_service, book_service, article_service
+from app.services import sjd_service, email_service, book_service, article_service
 
 @router.get('/api/kaizen')
 async def kaizen():
